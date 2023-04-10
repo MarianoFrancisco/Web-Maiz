@@ -1,6 +1,5 @@
 <?php
 include("vista/plantilla/headLogin.php");
-require_once("../configuracion.php");
 require_once("controlador_admin/controlador.php");
 if ($_GET) {
     modeloControlador::login();

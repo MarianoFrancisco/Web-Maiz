@@ -1,11 +1,18 @@
 CREATE DATABASE maizgt;
 USE maizgt;
-Create Table Administrador(--
+Create Table Rol(--
+    tipo VARCHAR(20) NOT NULL,
+    descripcion TEXT NOT NULL,
+    PRIMARY KEY(tipo)
+);
+Create Table Gestor(--
     usuario VARCHAR(10) NOT NULL,
+    tipo VARCHAR(20) NOT NULL,
     nombre VARCHAR(50) NOT NULL,
     telefono VARCHAR(15) NOT NULL,
     pwd VARCHAR(60) NOT NULL,
-    PRIMARY KEY(usuario)
+    PRIMARY KEY(usuario),
+    FOREIGN KEY(tipo) REFERENCES Rol(tipo)
 );
 Create Table TipoMaiz(--
     nombre_maiz VARCHAR(40) NOT NULL,

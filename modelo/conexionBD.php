@@ -3,6 +3,7 @@ class Modelo
 {
     private $Modelo;
     private $cn;
+    private $existencia;
     public function __construct()
     {
         $host = 'localhost';
@@ -15,10 +16,11 @@ class Modelo
     public function verificarLogin($nombreTabla, $restriccion)
     {
         $instruccionSQL = "SELECT * FROM " . $nombreTabla . " WHERE " . $restriccion . ";";
-        $operacionSQL = $this->cn->prepare($instruccionSQL);
-        $operacionSQL->execute();
-        $existencia = $operacionSQL->rowCount();
-        return $existencia;
+        $operacionSQL = $this->cn->query($instruccionSQL);
+        while($fila=$operacionSQL->fetchAll()){
+            $this->existencia[]=$fila;
+        }
+        return $this->existencia;
     }
 }
 ?>

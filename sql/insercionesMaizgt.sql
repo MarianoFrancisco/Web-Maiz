@@ -1,6 +1,9 @@
-INSERT INTO Administrador VALUES
-('mariano','Mariano Camposeco','31840649','1234'),
-('lisbeth','Lisbeth Hernandez','53423121','1234')
+INSERT INTO Rol VALUES
+('Administrador','Tiene la capacidad de administrar los gestores, etapas de maíz, los tipos y su guía de cultivo')
+;
+INSERT INTO Gestor VALUES
+('mariano','Administrador','Mariano Camposeco','31840649','1234'),
+('lisbeth','Administrador','Lisbeth Hernandez','53423121','1234')
 ;
 INSERT INTO TipoMaiz VALUES
 ('Maíz blanco', 'Variedad de maíz con granos blancos que se utiliza para la elaboración de tortillas, tamales y otros productos alimenticios.', 250.00),
