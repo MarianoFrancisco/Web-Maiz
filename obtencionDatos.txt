@@ -38,3 +38,5 @@ echo "conectado";
 } catch (PDOException $ex) {
 echo $ex->getMessage();
 }*/
+//obtener dato localizacion
+$redireccionarInicio="http://".$_SERVER['HTTP_HOST']."/webmaiz"
