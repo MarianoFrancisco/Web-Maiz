@@ -6,6 +6,7 @@
 <head>
     <title>ADMINISTRAR WEB</title>
     <script src="../vista/js/start.js" type="text/javascript"></script>
+    <script src="../vista/js/sweetAlert.js"></script>
 </head>
 
 <body background="../vista/imagen/fondoLogin.jpg" style="background-repeat:no-repeat;background-size:cover;">
