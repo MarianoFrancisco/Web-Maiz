@@ -22,5 +22,32 @@ class Modelo
         }
         return $this->existencia;
     }
+    public function verGestores($nombreTabla)
+    {
+        $instruccionSQL = "SELECT * FROM " . $nombreTabla . ";";
+        $operacionSQL = $this->cn->query($instruccionSQL);
+        while($fila=$operacionSQL->fetchAll()){
+            $this->existencia[]=$fila;
+        }
+        return $this->existencia;
+    }
+    public function verTiposMaiz($nombreTabla)
+    {
+        $instruccionSQL = "SELECT * FROM " . $nombreTabla . ";";
+        $operacionSQL = $this->cn->query($instruccionSQL);
+        while($fila=$operacionSQL->fetchAll()){
+            $this->existencia[]=$fila;
+        }
+        return $this->existencia;
+    }
+    public function verGuiasCultivo($nombreTabla)
+    {
+        $instruccionSQL = "SELECT * FROM " . $nombreTabla . ";";
+        $operacionSQL = $this->cn->query($instruccionSQL);
+        while($fila=$operacionSQL->fetchAll()){
+            $this->existencia[]=$fila;
+        }
+        return $this->existencia;
+    }
 }
 ?>

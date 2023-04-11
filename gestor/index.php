@@ -1,6 +1,6 @@
 <?php
-include("vista/plantilla/headLogin.php");
-require_once("controlador_admin/controlador.php");
+include("plantilla/headLogin.php");
+require_once("controlador_gestor/controlador.php");
 if ($_GET) {
     modeloControlador::login();
 }
@@ -19,4 +19,4 @@ if ($_GET) {
         </div>
     </center>
 </form>
-<?php include("vista/plantilla/footLogin.php"); ?>
+<?php include("plantilla/footLogin.php"); ?>

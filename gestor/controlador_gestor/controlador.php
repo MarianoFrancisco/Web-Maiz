@@ -29,7 +29,7 @@ class modeloControlador
                 }
             }
             if ($tipo == 'Administrador') {
-                header('Location:inicio.php');
+                header('Location:./administrador');
             }
 
         }

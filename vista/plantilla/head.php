@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <div class="collapse navbar-collapse">
-                <a class="navbar-brand" href="index.php">INICIO</a>
+                <a class="navbar-brand" href="./">INICIO</a>
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="tiposMaiz.php">TIPOS DE MAIZ</a>
