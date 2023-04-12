@@ -13,9 +13,9 @@ modeloControlador::mostrarTiposMaiz(); ?>
         </tr>
     </thead>
     <tbody>
-    <hr>
+        <p></p>
         <a type="button" class="btn btn-success" style="background-color:#219C0E" href="#">CREAR NUEVO TIPO DE MAIZ</a>
-        <hr>
+        <p></p>
         <?php
         if (!is_null(resultado)):
             foreach (resultado as $key => $value) foreach ($value as $dato): ?>

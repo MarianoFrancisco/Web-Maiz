@@ -49,5 +49,14 @@ class Modelo
         }
         return $this->existencia;
     }
+    public function verEtapasMaiz($nombreTabla)
+    {
+        $instruccionSQL = "SELECT * FROM " . $nombreTabla . " ORDER BY dias;";
+        $operacionSQL = $this->cn->query($instruccionSQL);
+        while($fila=$operacionSQL->fetchAll()){
+            $this->existencia[]=$fila;
+        }
+        return $this->existencia;
+    }
 }
 ?>

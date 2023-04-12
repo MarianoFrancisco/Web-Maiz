@@ -17,16 +17,16 @@
                 <a class="navbar-brand" href="./">INICIO</a>
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="tiposMaiz.php">TIPOS DE MAIZ</a>
+                        <a class="nav-link" href="tipoMaiz.php">TIPOS DE MAIZ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">GUIA DE CULTIVO</a>
+                        <a class="nav-link" href="guiaCultivo.php">GUIA DE CULTIVO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">VERIFICAR MI MAIZ</a>
+                        <a class="nav-link" href="verificarMaiz.php">VERIFICAR MI MAIZ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACTANOS</a>
+                        <a class="nav-link" href="contactar.php">CONTACTANOS</a>
                     </li>
                 </ul>
             </div>
