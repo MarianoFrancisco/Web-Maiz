@@ -16,13 +16,13 @@ if(isset($_GET['m'])){
             <th scope="col">Suelo</th>
             <th scope="col">Dias Cosecha</th>
             <th scope="col">Abonado</th>
-            <th scope="col">Edicion</th>
+            <!--<th scope="col">Edicion</th>-->
             <th scope="col">Eliminacion</th>
         </tr>
     </thead>
     <tbody>
     <p></p>
-        <a type="button" class="btn btn-success" style="background-color:#219C0E" href="#">CREAR NUEVA GUIA DE CULTIVO</a>
+    <h1 style="color: #FF7C00;" ALIGN="CENTER">MANEJAR GUÍAS DE CULTIVO</h1>
         <p></p>
         <?php
         if (!is_null(resultado)):
@@ -49,9 +49,9 @@ if(isset($_GET['m'])){
                         <th>
                             <?php echo $dato['abonado'] ?>
                         </th>
-                        <th>
+                        <!--<th>
                             <a type="button" class="btn btn-warning" FFD500 href="#">MODIFICAR</a>
-                        </th>
+                        </th>-->
                         <th>
                             <a type="button" class="btn btn-danger" style="background-color:#C10A0A" href="manejarGuiaCultivo.php?m=eliminarGuiaCultivo&textId=<?php echo $dato['id_cultivo']?>" onclick="return confirm('¿Seguro que quieres eliminar?'); false">ELIMINAR</a>
                         </th>

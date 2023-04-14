@@ -12,13 +12,13 @@ if(isset($_GET['m'])){
             <th scope="col">Nombre</th>
             <th scope="col">Descripcion</th>
             <th scope="col">Quintal en Quetzales</th>
-            <th scope="col">Edicion</th>
+            <!--<th scope="col">Edicion</th>-->
             <th scope="col">Eliminacion</th>
         </tr>
     </thead>
     <tbody>
         <p></p>
-        <a type="button" class="btn btn-success" style="background-color:#219C0E" href="#">CREAR NUEVO TIPO DE MAIZ</a>
+        <h1 style="color: #FF7C00;" ALIGN="CENTER">MANEJAR TIPOS DE MAÍZ</h1>
         <p></p>
         <?php
         if (!is_null(resultado)):
@@ -33,9 +33,9 @@ if(isset($_GET['m'])){
                         <td>
                             <?php echo $dato['precio_quintal'] ?>
                         </td>
-                        <th>
-                            <a type="button" class="btn btn-warning" href="#">MODIFICAR</a>
-                        </th>
+                        <!--<th>
+                            <a type="button" class="btn btn-warning" FFD500 href="#">MODIFICAR</a>
+                        </th>-->
                         <th>
                             <a type="button" class="btn btn-danger" style="background-color:#C10A0A"  href="manejarTipoMaiz.php?m=eliminarTipoMaiz&textTipoMaiz=<?php echo $dato['nombre_maiz']?>" onclick="return confirm('¿Seguro que quieres eliminar?'); false">ELIMINAR</a>
                         </th>
