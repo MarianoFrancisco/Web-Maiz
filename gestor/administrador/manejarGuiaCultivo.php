@@ -1,7 +1,11 @@
 <?php
 include("plantilla/head.php");
 require_once("controlador_admin/controlador.php");
-modeloControlador::mostrarGuiasCultivo(); ?>
+modeloControlador::mostrarGuiasCultivo(); 
+if(isset($_GET['m'])){
+    modeloControlador::{$_GET['m']}();
+}?>
+
 <table class="table table-hover" bgcolor="0A1375">
     <thead>
         <tr>
@@ -18,7 +22,7 @@ modeloControlador::mostrarGuiasCultivo(); ?>
     </thead>
     <tbody>
     <p></p>
-        <a type="button" class="btn btn-success" style="background-color:#219C0E" href="#">CREAR NUEVO GESTOR</a>
+        <a type="button" class="btn btn-success" style="background-color:#219C0E" href="#">CREAR NUEVA GUIA DE CULTIVO</a>
         <p></p>
         <?php
         if (!is_null(resultado)):
@@ -49,7 +53,7 @@ modeloControlador::mostrarGuiasCultivo(); ?>
                             <a type="button" class="btn btn-warning" FFD500 href="#">MODIFICAR</a>
                         </th>
                         <th>
-                            <a type="button" class="btn btn-danger" style="background-color:#C10A0A" href="#">ELIMINAR</a>
+                            <a type="button" class="btn btn-danger" style="background-color:#C10A0A" href="manejarGuiaCultivo.php?m=eliminarGuiaCultivo&textId=<?php echo $dato['id_cultivo']?>" onclick="return confirm('¿Seguro que quieres eliminar?'); false">ELIMINAR</a>
                         </th>
                     <?php endforeach; endif; ?>
         </tr>

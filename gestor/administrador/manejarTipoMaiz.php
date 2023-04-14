@@ -1,7 +1,11 @@
 <?php
 include("plantilla/head.php");
 require_once("controlador_admin/controlador.php");
-modeloControlador::mostrarTiposMaiz(); ?>
+modeloControlador::mostrarTiposMaiz();
+if(isset($_GET['m'])){
+    modeloControlador::{$_GET['m']}();
+}
+?>
 <table class="table table-hover" bgcolor="0A1375">
     <thead>
         <tr>
@@ -33,7 +37,7 @@ modeloControlador::mostrarTiposMaiz(); ?>
                             <a type="button" class="btn btn-warning" href="#">MODIFICAR</a>
                         </th>
                         <th>
-                            <a type="button" class="btn btn-danger" style="background-color:#C10A0A"  href="#">ELIMINAR</a>
+                            <a type="button" class="btn btn-danger" style="background-color:#C10A0A"  href="manejarTipoMaiz.php?m=eliminarTipoMaiz&textTipoMaiz=<?php echo $dato['nombre_maiz']?>" onclick="return confirm('¿Seguro que quieres eliminar?'); false">ELIMINAR</a>
                         </th>
                     <?php endforeach; endif; ?>
         </tr>

@@ -22,4 +22,22 @@ class modeloControlador
         $guiasCultivo = new Modelo();
         define("resultado",$guiasCultivo->verGuiasCultivo("GuiaCultivo"));
     }
+    static function eliminarTipoMaiz()
+    {
+        $tipoMaiz=$_REQUEST['textTipoMaiz'];
+        $guiasCultivo = new Modelo();
+        $guiasCultivo->deleteTipoMaiz("TipoMaiz",$tipoMaiz);
+    }
+    static function eliminarGestor()
+    {
+        $usuario=$_REQUEST['textUsuario'];
+        $guiasCultivo = new Modelo();
+        $guiasCultivo->deleteGestor("Gestor",$usuario);
+    }
+    static function eliminarGuiaCultivo()
+    {
+        $id=$_REQUEST['textId'];
+        $guiasCultivo = new Modelo();
+        $guiasCultivo->deleteGuiaCultivo("GuiaCultivo",$id);
+    }
 }

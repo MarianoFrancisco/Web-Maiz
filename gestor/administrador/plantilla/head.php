@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../vista/css/bootstrap.css" />
     <title>ADMINISTRADOR</title>
+    <script src="../../vista/js/start.js" type="text/javascript"></script>
+    <script src="../../vista/js/sweetAlert.js"></script>
 </head>
 
 <body><!--Obtenemos el host ya sea localhost o una personalizada -->
