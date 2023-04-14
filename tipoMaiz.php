@@ -4,6 +4,9 @@ require_once("controlador/controlador.php");
 modeloControlador::mostrarTiposMaiz(); ?>
 <p></p>
 <h1 style="color:#FF7C00" ALIGN="CENTER">TIPOS DE MAÍZ EN GUATEMALA</h1>
+<div class="jumbotron text-center">
+    <img src="vista/imagen/tiposMaiz.jpg" width="40%" class="img-thumbnail" /></img>
+</div>
 <?php
         if (!is_null(resultado)):
             foreach (resultado as $key => $value) foreach ($value as $dato): ?>

@@ -34,7 +34,9 @@
                         <a class="nav-link" href="<?php echo urlSitio?>/gestor">CERRAR SESION</a>
                     </li>
                 </ul>
-            </div>
+            </div><audio controls>
+                <source src="../../vista/audio/yume.mp3" type="audio/mpeg">
+            </audio>
         </div>
     </nav>
     <div class="container">

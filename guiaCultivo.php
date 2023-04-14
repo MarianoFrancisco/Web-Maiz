@@ -4,6 +4,9 @@ require_once("controlador/controlador.php");
 modeloControlador::mostrarGuiasCultivo() ?>
 <p></p>
 <h1 style="color:#FF7C00" ALIGN="CENTER">GUÍAS DE CULTIVO PARA LOS TIPOS DE MAÍZ</h1>
+<div class="jumbotron text-center">
+    <img src="vista/imagen/cultivoMaiz.jpeg" width="40%" class="img-thumbnail" /></img>
+</div>
 <?php
         if (!is_null(resultado)):
             foreach (resultado as $key => $value) foreach ($value as $dato): ?>

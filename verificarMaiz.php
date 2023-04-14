@@ -4,6 +4,9 @@ require_once("controlador/controlador.php");
 modeloControlador::mostrarEtapasMaiz(); ?>
 <p></p>
 <h1 style="color:#FF7C00" ALIGN="CENTER">ETAPAS DEL MAÍZ</h1>
+<div class="jumbotron text-center">
+    <img src="vista/imagen/etapaMaiz.jpg" width="40%" class="img-thumbnail" /></img>
+</div>
 <?php
         if (!is_null(resultado)):
             foreach (resultado as $key => $value) foreach ($value as $dato): ?>
